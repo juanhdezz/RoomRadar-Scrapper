@@ -19,7 +19,7 @@ def index():
         # Obtener datos de Google Travel
         datos_google_travel = obtener_datos_google_travel(consulta, precio_maximo)
 
-        return render_template("resultado2.html", datos_airbnb=datos_airbnb, datos_google_travel=datos_google_travel)
+        return render_template("resultado.html", datos_airbnb=datos_airbnb, datos_google_travel=datos_google_travel)
         
     return render_template("index.html", datos_airbnb=datos_airbnb, datos_google_travel=datos_google_travel)
 
